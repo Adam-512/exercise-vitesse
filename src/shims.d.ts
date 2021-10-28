@@ -10,3 +10,8 @@ declare module '*.md' {
   const component: ComponentOptions
   export default component
 }
+
+declare module '*.vue' {
+  import { component } from 'vue'
+  export default component
+}
