@@ -4,16 +4,20 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    CarbonCampsite: typeof import('~icons/carbon/campsite')['default']
-    CarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
-    CarbonLanguage: typeof import('~icons/carbon/language')['default']
-    CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
-    CarbonMoon: typeof import('~icons/carbon/moon')['default']
-    CarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
-    CarbonSun: typeof import('~icons/carbon/sun')['default']
-    CarbonWarning: typeof import('~icons/carbon/warning')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
+    IconCarbonCampsite: typeof import('~icons/carbon/campsite')['default']
+    IconCarbonDicomOverlay: typeof import('~icons/carbon/dicom-overlay')['default']
+    IconCarbonFaceActivatedFilled: typeof import('~icons/carbon/face-activated-filled')['default']
+    IconCarbonFaceCool: typeof import('~icons/carbon/face-cool')['default']
+    IconCarbonFaceDizzy: typeof import('~icons/carbon/face-dizzy')['default']
+    IconCarbonFacePending: typeof import('~icons/carbon/face-pending')['default']
+    IconCarbonLanguage: typeof import('~icons/carbon/language')['default']
+    IconCarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
+    IconCarbonMoon: typeof import('~icons/carbon/moon')['default']
+    IconCarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
+    IconCarbonSun: typeof import('~icons/carbon/sun')['default']
+    IconCarbonWarning: typeof import('~icons/carbon/warning')['default']
     README: typeof import('./components/README.md')['default']
   }
 }

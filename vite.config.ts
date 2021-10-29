@@ -61,7 +61,7 @@ export default defineConfig({
         // auto import icons
         // https://github.com/antfu/unplugin-icons
         IconsResolver({
-          componentPrefix: '',
+          componentPrefix: 'icon',
           // enabledCollections: ['carbon']
         }),
       ],
@@ -70,9 +70,7 @@ export default defineConfig({
     }),
 
     // https://github.com/antfu/unplugin-icons
-    Icons({
-      autoInstall: true,
-    }),
+    Icons(),
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS({
