@@ -29,8 +29,8 @@ const toggleDrawer = () => {
     </el-menu-item>
   </el-menu>
   <!-- mobile -->
-  <div class="py-4 px-5 flex justify-end md:hidden">
-    <icon-mdi-menu class="text-lg" @click="toggleDrawer" />
+  <div class="py-4 px-5 flex justify-end md:hidden ">
+    <icon-mdi-menu class="text-lg dark:text-white" @click="toggleDrawer" />
   </div>
   <el-drawer v-model="showDrawer" size="50%" title="I am the title" :with-header="false">
     <ul>
@@ -54,5 +54,8 @@ const toggleDrawer = () => {
 <style scoped lang="scss">
   .activeLink{
     color:blue;
+  }
+  .el-menu-item{
+    @apply capitalize;
   }
 </style>

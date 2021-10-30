@@ -1,0 +1,14 @@
+html.dark .el-menu{
+  --el-menu-background-color:#121212;
+  --el-menu-text-color:#fff;
+  --el-menu-hover-background-color:#f4f4f5;
+}
+html.dark .el-menu .el-menu-item:hover{
+  --el-menu-text-color:#000;
+}
+
+
+/* drawer */
+html.dark .el-drawer{
+  --el-drawer-background-color:#e6e6e6;
+}
