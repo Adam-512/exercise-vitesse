@@ -14,6 +14,7 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -62,8 +63,8 @@ export default defineConfig({
         // https://github.com/antfu/unplugin-icons
         IconsResolver({
           componentPrefix: 'icon',
-          // enabledCollections: ['carbon']
         }),
+        ElementPlusResolver(),
       ],
 
       dts: 'src/components.d.ts',

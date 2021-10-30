@@ -4,6 +4,9 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ElDrawer: typeof import('element-plus/es')['ElDrawer']
+    ElMenu: typeof import('element-plus/es')['ElMenu']
+    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     IconCarbonCampsite: typeof import('~icons/carbon/campsite')['default']
@@ -15,6 +18,7 @@ declare module 'vue' {
     IconCarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
     IconCarbonSun: typeof import('~icons/carbon/sun')['default']
     IconCarbonWarning: typeof import('~icons/carbon/warning')['default']
+    IconMdiMenu: typeof import('~icons/mdi/menu')['default']
     README: typeof import('./components/README.md')['default']
   }
 }
