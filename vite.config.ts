@@ -15,6 +15,7 @@ import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -65,7 +66,7 @@ export default defineConfig({
           componentPrefix: 'icon',
         }),
         ElementPlusResolver({
-          ssr: true,
+          ssr: false,
         }),
       ],
 
@@ -144,6 +145,12 @@ export default defineConfig({
   server: {
     fs: {
       strict: true,
+    },
+  },
+
+  build: {
+    rollupOptions: {
+      plugins: [visualizer({ open: true })],
     },
   },
 

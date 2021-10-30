@@ -4,9 +4,9 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElDrawer: typeof import('element-plus/lib')['ElDrawer']
-    ElMenu: typeof import('element-plus/lib')['ElMenu']
-    ElMenuItem: typeof import('element-plus/lib')['ElMenuItem']
+    ElDrawer: typeof import('element-plus/es')['ElDrawer']
+    ElMenu: typeof import('element-plus/es')['ElMenu']
+    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     IconCarbonCampsite: typeof import('~icons/carbon/campsite')['default']
