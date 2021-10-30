@@ -64,7 +64,9 @@ export default defineConfig({
         IconsResolver({
           componentPrefix: 'icon',
         }),
-        ElementPlusResolver(),
+        ElementPlusResolver({
+          ssr: true,
+        }),
       ],
 
       dts: 'src/components.d.ts',
