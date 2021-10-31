@@ -15,7 +15,7 @@ import Inspect from 'vite-plugin-inspect'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import { visualizer } from 'rollup-plugin-visualizer'
+// import { visualizer } from 'rollup-plugin-visualizer'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -65,9 +65,7 @@ export default defineConfig({
         IconsResolver({
           componentPrefix: 'icon',
         }),
-        ElementPlusResolver({
-          ssr: false,
-        }),
+        ElementPlusResolver(),
       ],
 
       dts: 'src/components.d.ts',
@@ -150,16 +148,16 @@ export default defineConfig({
 
   build: {
     rollupOptions: {
-      plugins: [visualizer({ open: true })],
+      plugins: [
+        // visualizer({ open: false }),
+      ],
     },
   },
-
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
     script: 'async',
     formatting: 'minify',
   },
-
   optimizeDeps: {
     include: [
       'vue',
