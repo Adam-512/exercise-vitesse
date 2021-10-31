@@ -7,6 +7,9 @@ import App from './App.vue'
 // windicss layers
 import 'virtual:windi-base.css'
 import 'virtual:windi-components.css'
+
+import 'element-plus/theme-chalk/src/index.scss'
+
 // your custom styles here
 import './styles/main.css'
 // windicss utilities should be the last style import

@@ -68,6 +68,7 @@ export default defineConfig({
         }),
         ElementPlusResolver({
           ssr: true,
+          importStyle: 'css',
         }),
       ],
 
@@ -152,7 +153,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       plugins: [
-        // visualizer({ open: false }),
+        // visualizer({ open: true }),
       ],
     },
   },
