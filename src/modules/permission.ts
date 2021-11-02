@@ -1,4 +1,4 @@
-import { UserModule } from '~/types'
+import { UserModule } from '@/types'
 
 export const install: UserModule = ({ router, isClient }) => {
   if (isClient) {
