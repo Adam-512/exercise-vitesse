@@ -8,7 +8,7 @@ import App from './App.vue'
 import 'virtual:windi-base.css'
 import 'virtual:windi-components.css'
 
-import 'element-plus/theme-chalk/src/index.scss'
+import 'element-plus/dist/index.css'
 
 // your custom styles here
 import './styles/main.css'
